@@ -1,0 +1,22 @@
+.head {
+  &__ham-cont.active {
+    .head__hamburger {
+      transform: translateX(-50px);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
+  }
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
